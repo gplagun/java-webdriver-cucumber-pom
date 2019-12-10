@@ -1,5 +1,6 @@
 package definitions;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -44,5 +45,10 @@ public class MarketStepDefs {
         assertThat(result.getPrivacy()).isEqualTo("true");
         assertThat(result.getPassword()).isEqualTo("[entered]");
         assertThat(result.areAllResultElementsBold()).isTrue();
+    }
+
+    @And("I fill out optional fields")
+    public void iFillOutOptionalFields() {
+        // TODO: add verification
     }
 }
